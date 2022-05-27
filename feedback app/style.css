@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Overpass:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Karla', sans-serif;
+	font-family: 'Overpass', sans-serif;
+}
+
+body {
+	background-color:burlywood;
+}
+.container {
+	width: 450px;
+	padding: 2rem 3.5rem;
+	line-height: 1.5rem;
+	color: hsl(0, 0%, 100%);
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 20px;
+	background: linear-gradient(burlywood, brown);
+	display: block;
+	z-index: 2;
+}
+.container h2 {
+	font-weight: 700;
+	font-size: x-large;
+	margin-bottom: 10px;
+}
+
+.container p {
+	color: hsl(0, 0%, 100%);
+	font-weight: 400;
+}
+
+.container button {
+	background-color: burlywood;
+	padding: 4.5%;
+	width: 100%;
+	border-radius: 40px;
+	color: hsl(0, 0%, 100%);
+	box-shadow: none;
+	transition: background-color 0.2s, color 0.2s;
+	border: none;
+}
+
+.container button:hover {
+	background: rgb(230, 135, 34);
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+}
+
+.button {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.button li {
+	list-style: none;
+	border-radius: 50%;
+	padding: 1rem;
+	width: 3rem;
+	background-color: burlywood;
+	border: none;
+	color: #ffffff;
+	margin: .5rem;
+	transition: opacity 0.2s;
+}
+
+.button li:hover {
+	background: rgb(230, 135, 34);
+	cursor: pointer;
+}
+
+.button li::after {
+	background-color: #ff0000;
+	color: #fff5f5;
+}
+
+#behind {
+	width: 450px;
+	height: 300px;
+	padding: 2rem 3.5rem;
+	line-height: 1.5rem;
+	color: #fff5f5;
+	background:
+		linear-gradient(burlywood, brown);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 20px;
+	display: block;
+	z-index: 1;
+
+}
+
+#behind h6 {
+	text-align: center;
+	background: #d79744;
+	color: #fff5f5;
+	border-radius: 40px;
+	width: 15rem;
+	padding: .5rem;
+	font-size: 14px;
+	margin-bottom: 24px;
+	margin-left: 3rem;
+}
+
+#behind h2 {
+	text-align: center;
+	font-size: xx-large;
+	color: #fff5f5;
+}
+
+#behind p {
+	color: #fff5f5;
+	font-weight: 400;
+	text-align: center;
+	font-size: x-large;
+}
